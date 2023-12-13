@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+
+body {
+    background-image: url(../assets/fondos/fondo3.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    margin-bottom: -63.9px;
+}
+
+.imgJuego {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 18%; /* Alinea el texto en el centro verticalmente */
+    left: 50%; /* Alinea el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto completamente */
+    color: white; /* Color del texto */
+    padding: 2vw; /* Espacio alrededor del texto en unidades vw */
+    font-size: 8vw; /* Tamaño de fuente en unidades vw */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: Caveat-Medium;
+    z-index: 999; /* Asegura que la imagen esté en la parte superior de otros elementos */
+}
+
+.text-container {
+    flex: 1;
+}
+
+.column-image {
+    position: absolute;
+    max-width: 50%; /* Ajusta el ancho de la columna de la imagen */
+    width: 45vw;
+    height: auto;
+    top: 49%; /* Centra verticalmente */
+    left: 70%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra en relación con su tamaño */
+    font-size: 1.5vw; /* Tamaño de fuente relativo al ancho de la ventana */
+    line-height: 1.2;
+    font-family: Caveat-Regular;
+    color: white;
+    max-height: 25vw;
+    overflow-y: auto;
+}
+
+.column-image .tab-line {
+    margin-left: 20px; /* Ajusta el valor según tus necesidades */
+}
+
+.carousel {
+    position: absolute;
+    width: 40vw;
+    height: 15vw;
+    top: 28vw;
+    left: 30vw; /* Ajusta las coordenadas para que coincidan con la posición de la tarjeta */
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    transition: transform 0.3s;
+}
+
+
+/* Estilo para la imagen cuando la ventana es mayor o igual a 1000px de ancho */
+#imagenEnlace {
+    position: absolute;
+    top: 15%;
+    left: 86.6%;
+    transform: translate(-50%, -50%);
+    width: 110px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: auto; /* Autoajuste de la altura para mantener la proporción original */
+    z-index: 999; /* Asegura que la imagen esté en la parte superior de otros elementos */
+}
+/* Media Query para ventanas de hasta 600px de ancho */
+@media (max-width: 600px) {
+    #imagenEnlace {
+        width: 55px; /* Tamaño para ventanas más pequeñas */
+    }
+}

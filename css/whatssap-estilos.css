@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+    right: 20px; /* Ajusta la distancia desde la parte derecha según sea necesario */
+    z-index: 9999; /* Asegura que esté por encima de todo */
+}
+
+#whatsapp-icon a {
+    display: block;
+}
+
+.translucent-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Para hacer el ícono redondo si es necesario */
+    cursor: pointer;
+    opacity: 0.7; /* Establece la opacidad inicial */
+    transition: opacity 0.3s; /* Agrega una transición suave para la opacidad */
+}
+
+.translucent-icon:hover {
+    opacity: 1; /* Hace que la opacidad sea 100% al poner el mouse sobre el ícono */
+}

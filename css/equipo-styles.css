@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+
+
+body {
+    background-image: url(../assets/fondos/fondo6.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tituloMain {
+    text-decoration: none;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.titulop{
+    font-size: 70px;
+    color: black;
+    font-family: Caveat-Bold; 
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border-radius: 9px;
+    overflow: hidden;
+    border: none;
+    width: 250px;
+    height: 350px; 
+}
+
+.card-body {
+    text-align: center;
+    height: 170px;
+    background-size: cover;
+    position: relative;
+}
+
+.card-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1)); /* Fondo degradado desde transparente a oscuro */
+    opacity: 0; /* Hacemos que inicialmente sea completamente transparente */
+    transition: opacity 0.3s; /* Agregamos una transición suave para la opacidad */
+}
+
+.card:hover .card-body::before {
+    opacity: 1; /* Hacemos que la superposición sea visible al hacer hover */
+}
+
+.card:hover .card-body {
+    background-size: cover; /* Puedes ajustar otras propiedades según tus necesidades */
+}
+
+
+.card-text {
+    margin-top: 15px;
+    font-size: 23px;
+    color: black;
+    font-family: Caveat-Bold; 
+}
+
+.text-container{
+    font-family: Caveat-Regular; 
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.card-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card-body .hidden-text {
+    opacity: 0; /* Hacemos que el texto sea inicialmente invisible */
+    color: white; /* Color del texto */
+    position: absolute;
+    top: 50%; /* Puedes ajustar la posición vertical según tu diseño */
+    left: 50%; /* Puedes ajustar la posición horizontal según tu diseño */
+    transform: translate(-50%, -50%); /* Centramos el texto en el medio de la tarjeta */
+    font-family: Caveat-Regular;
+    font-size: 17pt;
+}
+
+.card:hover .card-body::before {
+    opacity: 1;
+}
+
+.card:hover .card-body .hidden-text {
+    opacity: 1; /* Hacemos que el texto sea visible al hacer hover */
+}
+
+.social-icons{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    
+}
+
+
+
+
+

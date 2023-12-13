@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+
+
+body {
+    background-image: url(../assets/fondos/fondo3.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.image-container {
+    position: relative;
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    margin-bottom: -63.9px;
+}
+
+.imgJuego {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 18%; /* Alinea el texto en el centro verticalmente */
+    left: 50%; /* Alinea el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto completamente */
+    color: black; /* Color del texto */
+    padding: 2vw; /* Espacio alrededor del texto en unidades vw */
+    font-size: 10vw; /* Tamaño de fuente en unidades vw */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: Caveat-Medium;
+}
+
+
+.titulop{
+    font-size: 70px;
+    color: black;
+    font-family: Caveat; 
+}
+
+/* Estilos para las tarjetas */
+/* Estilos para las tarjetas */
+/* Estilos para las tarjetas */
+
+.card {
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #000;
+    width: 12vw;
+    height: 15vw;
+    transform: translate(-50%, -50%) rotate(15deg); /* Rota la tarjeta -15 grados hacia la izquierda */
+    top: 34vw;
+    left: 45vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* box-shadow: [horizontal] [vertical] [desenfoque] [propagación] [color]; */
+    transition: transform 0.3s; /* Agregamos una transición para la propiedad "transform" */
+}
+.card:hover {
+    transform: scale(1.2); /* Escalamos el icono al hacer hover (puedes ajustar el valor según tus preferencias) */
+}
+
+.card1 {
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #000;
+    width: 12vw;
+    height: 15vw;
+    transform: translate(-50%, -50%) rotate(-16deg); /* Sin rotación para la otra tarjeta */
+    top: 34vw;
+    left: 35vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* box-shadow: [horizontal] [vertical] [desenfoque] [propagación] [color]; */
+    transition: transform 0.3s; /* Agregamos una transición para la propiedad "transform" */
+}
+
+.card1:hover {
+    transform: scale(1.2); /* Escalamos el icono al hacer hover (puedes ajustar el valor según tus preferencias) */
+}
+
+
+.card-body {
+    text-align: center;
+    height: 15vw;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+

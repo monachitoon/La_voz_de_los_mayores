@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+/* INICIO MENÚ LATERAL */
+a{
+    text-decoration: none;
+}
+
+.icon_menu{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+.icon_menu img{
+    cursor: pointer;
+    
+}
+
+.menu_side{
+    background-image: url(../assets/fondos/fondo3.webp);
+    width: 100px;
+    height: 500px;
+    border-radius: 0px 13px 13px 0px;
+    background-color: rgba(167, 83, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    top: 9vw; /* Este mantiene la barra pegada a arriba*/
+    left: -27px; /* Este mantiene la barra pegada a la izquierda*/
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    .menu_side {
+      height: 450px;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .menu_side {
+      height: 300px;
+    }
+  }
+
+/* Ocultar scroll para Chrome, Safari y Opera */
+.menu_side::-webkit-scrollbar{
+    display: none;
+}
+
+/* Ocultar scroll para IE, Edge y Firefox */
+.menu_side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.name_page{
+    text-decoration: none;
+    font-family: Caveat-Semibold;
+    color: white; 
+    display: flex;
+    align-items: center;
+}
+
+.name_page h3 {
+    border-radius: 7px;
+    padding: 11px 10px;
+    white-space: nowrap;
+    color: rgb(0, 0, 0);
+}
+
+/* h3, .h3 {
+    font-size: calc(1rem + 0.6vw);
+}
+
+h6, .h6, h5, .h5, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color, inherit);
+}
+
+h4, .h4 {
+   font-size: calc(0.7rem + 0.3vw);
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color, inherit);
+} */
+
+.options_menu{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    bottom: 30px;
+}
+
+.options_menu a{
+    color: black;
+    font-family: Caveat-Semibold;
+    border-radius: 7px;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.options_menu a:hover{
+    background-color: rgba(167, 83, 0, 0.3);
+}
+
+.options_menu .option{
+    margin: 0px 0px 11px;
+    padding: 7px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options_menu .option img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+a.selected{
+    background-color: rgba(167, 83, 0, 0.4);
+}
+
+/* Clases para usar en JavaScript */
+.menu_side_move{
+    width: 350px;
+}
+
+/* FIN MENÚ LATERAL */

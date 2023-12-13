@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+
+
+body {
+    background-image: url(../assets/fondos/fondo1.webp);    
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tituloMain {
+
+    text-decoration: none;
+    margin-bottom: 5em;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.titulop{
+    font-size: 100px;
+    color: black;
+    font-family: Caveat-Bold;
+}
+
+.imgTextCarrusel{
+    font-family: Caveat-Semibold; 
+    font-size: 35px; 
+    color: black; 
+    text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 1px #ffffff, -0.5px -0.5px 0 #ffffff, 0.5px -0.5px 0 #ffffff, -0.5px 0.5px 0 #ffffff;
+}
+
+/* 
+.containerCarrusel{
+    padding-bottom: 5em;
+} */
+
+.col-md-3{
+    position: relative;
+    margin-top: 2.7vw;
+    margin-bottom: 15vw;
+}
+
+.listaMain {
+    list-style: none;
+    font-family: Caveat-Semibold;
+    font-size: 27px;
+    background-color: rgba(167, 83, 0, 0.5);
+    border-radius: 7px;
+    color: black;
+    padding: 9px;
+    transition: background-color 0.3s; /* Agregamos una transición suave para el fondo */
+}
+
+.listaMain:hover {
+    background-color: rgba(167, 83, 0, 0.7); /* Cambiamos el fondo al hacer hover para que se oscurezca */
+}
+
+.listaMain a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.listaMain img{
+    width: 70px;
+    margin-right: 10px;
+}

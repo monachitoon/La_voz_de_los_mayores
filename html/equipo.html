@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../bootstrap-5.3.0-alpha2-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/equipo-styles.css">
+	<link rel="stylesheet" href="../css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="../css/menu-estilos.css">
+	<link rel="stylesheet" href="../css/whatssap-estilos.css">
+	<link rel="stylesheet" type="text/css" href="../css/titulo-stilos.css">
+
+	<script src="/js/jquery-3.6.4.min.js"></script>
+	<script src="../js/menu.js"></script>
+
+	<title>Equipo de trabajo</title>
+</head>
+
+<body id="body">
+	<!-- INICIO MENÚ LATERAL-->
+	<div class="menu_side" id="menu_side">
+
+		<div class="options_menu">
+			
+			<div class="icon_menu" id="btn_open">
+				<img src="../assets/iconos/ico-home.svg" title="Menú" width="53px" height="53 px">
+				<div class="options_name_page">
+					<a href="../index.html">
+						<div class="name_page">
+							<h3 title="Inicio">La voz de los mayores</h3>
+						</div>
+					</a>
+				</div>
+			</div>		
+			
+			<a href="../html/proyecto.html">
+				<div class="option">
+					<img src="../assets/iconos/ico-proyecto.svg" title="Proyecto" width="53px" height="53 px">
+					<h4>Proyecto</h4>
+				</div>
+			</a>
+
+			<a href="../html/juego.html">
+				<div class="option">
+					<img src="../assets/iconos/ico-juego.svg" title="Juego de mesa" width="53px" height="53 px">
+					<h4>Juego de mesa</h4>
+				</div>
+			</a>
+
+			<a href="../html/campana.html">
+				<div class="option">
+					<img src="../assets/iconos/ico-campana.svg" title="Campaña" width="53px" height="53 px">
+					<h4>Campaña</h4>
+				</div>
+			</a>
+
+			<a href="../html/making.html">
+				<div class="option">
+					<img src="../assets/iconos/ico-making.svg" title="Making off" width="53px" height="53 px">
+					<h4>Making off</h4>
+				</div>
+			</a>
+
+			<a href="../html/equipo.html" class="selected">
+				<div class="option">
+					<img src="../assets/iconos/ico-equipo.svg" title="Equipo de trabajo" width="53px" height="53 px">
+					<h4>Equipo de trabajo</h4>
+				</div>
+			</a>
+
+		</div>
+
+	</div>
+	<!-- FIN MENÚ LATERAL-->
+
+	<div class="encabezado-container">
+        <!-- INICIO DEL HEADER -->
+        <header class="encabezado">
+            <div class="container">
+                <h1 class="titulo_secundario">
+                   Equipo de trabajo
+                </h1>
+            </div>
+        </header>
+        <!-- FIN DEL HEADER -->
+    </div>
+	
+	<div class="container">
+
+		<!-- INICIO TARJETAS-->
+		<div class="row container_cards">
+			
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card" data-text-id="text-paula" data-target="0" data-image="../assets/fotos/Foto_Ale.webp">
+							<div class="card-body" style="background-image: url(../assets/fotos/Foto_Ale_Dibujo.webp);">
+								<h3 class="card-text">Paula Hernández</h3>
+								<p class="hidden-text">Fotógrafa</p>							
+							</div>
+						</div>										
+					</div>					
+
+					<div class="col-md-4">
+						<div class="card" data-text-id="text-alejandro" data-target="1" data-image="../assets/fotos/Foto_Alejandro.webp">
+							<div class="card-body" style="background-image: url(../assets/fotos/Foto_Alejandro_Dibujo.webp);">
+								<h3 class="card-text">Alejandro Mariño</h3>
+								<p class="hidden-text">Fotógrafo</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card" data-text-id="text-malena" data-target="2" data-image="../assets/fotos/Foto_Lena.webp">
+							<div class="card-body" style="background-image: url(../assets/fotos/Foto_Lena_Dibujo.webp);">
+								<h3 class="card-text">Malena Barón</h3>
+								<p class="hidden-text">Ilustradora</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<!-- FIN TARJETAS-->
+	</div>
+
+
+
+
+	<footer class="pieDePagina p-5 row">
+		<!-- Sección del título -->
+		<section class="SeccionTitulo">
+			<!-- Línea divisoria -->
+			<hr class="dropdown-divider" style="margin-top: 10px;">
+			<!-- Enlace al inicio -->
+			<a class="titulo" href="../index.html">La voz de los mayores</a>
+		</section>
+
+		<!-- Sección de redes sociales -->
+        <section class="SeccionRedes">
+            <hr class="dropdown-divider" style="margin-top: 10px;">
+            <!-- Enlaces a redes sociales -->
+            <a href="https://instagram.com/vocesdelosmayores?igshid=OGQ5ZDc2ODk2ZA==" title="instagram" target="_blank">
+                <img class="iconosRedes" src="../assets/iconos/ico-inst.svg">
+            </a>
+            <a href="https://www.tiktok.com/@voces.de.los.mayores?_t=8i6exlsY2ic&_r=1" title="tik tok" target="_blank">
+                <img class="iconosRedes" src="../assets/iconos/ico-tik.svg">
+            </a>
+            <a href="#" onclick="abrirWhatsAppFooter(); return false;" title="WhatsApp">
+				<img class="iconosRedes" src="../assets/iconos/ico-what.svg">
+			</a>
+		</section>
+		
+		<script>
+			function abrirWhatsAppFooter() {
+				var numeroWhatsApp = '3167340721';
+				var mensajePredeterminado = encodeURIComponent('¡Hola! Quisiera conocer más acerca de La voz de los mayores y adquirir sus productos.');
+				
+				var url = 'https://api.whatsapp.com/send?phone=' + numeroWhatsApp + '&text=' + mensajePredeterminado;
+				
+				window.open(url, '_blank');
+			}
+		</script>
+        </section>
+
+		<!-- Sección de enlaces -->
+		<section class="SeccionLinks">
+			<hr class="dropdown-divider" style="margin-top: 10px;">
+			<!-- Enlaces a las páginas del sitio -->
+			<a class="link" href="proyecto.html">Proyecto</a>
+			<a class="link" href="juego.html">Juego de mesa</a>
+			<a class="link" href="campana.html">Campaña</a>
+			<a class="link" href="making.html">Making off</a>
+			<a class="link" href="equipo.html">Equipo de trabajo</a>
+		</section>
+
+		<!-- Sección de derechos de autor -->
+		<section class="SeccionLinks">
+			<!-- Línea divisoria con un mayor margen superior -->
+			<hr class="dropdown-divider" style="margin-top: 50px;">
+			<!-- Aviso de derechos de autor -->
+			<p class="link">Copyright® 2023 | Todos los derechos reservados</p>
+		</section>
+	</footer>
+
+	<!-- Inicio script para extender y ocultar el menú-->
+	<script src="../js/Menu.js"></script>
+	<!-- Fin script para extender y ocultar el menú-->
+
+	<!-- Inicio script para cambiar foto-->
+	<script>
+		$(document).ready(function() {
+		    // Al cargar la página, guardamos la imagen original en un nuevo atributo 'data-original-image'
+		    $(".card").each(function() {
+		        var originalImage = $(this).find('.card-body').css('background-image');
+		        $(this).data('original-image', originalImage);
+		    });
+
+		    $(".card").hover(
+		        function() {
+		            // Al entrar (hover) en la tarjeta
+		            var newImage = $(this).data('image');
+		            $(this).find('.card-body').css('background-image', 'url(' + newImage + ')');
+		        },
+		        function() {
+		            // Al salir del hover, restauramos la imagen original
+		            var originalImage = $(this).data('original-image');
+		            $(this).find('.card-body').css('background-image', originalImage);
+		        }
+		    );
+		});
+	</script>
+	<!-- Fin script para cambiar foto-->
+
+	<!-- Inicio ícono de WhatsApp -->
+	<div id="whatsapp-icon">
+    	<a href="#" onclick="abrirWhatsApp(); return false;" title="Contáctanos">
+        	<img src="../assets/iconos/ico-what-color.svg" alt="WhatsApp" class="translucent-icon">
+	    </a>
+	</div>
+
+	<script>
+	    function abrirWhatsApp() {
+	        // Reemplaza 'tu_numero' con el número de WhatsApp y 'mensaje' con el mensaje predeterminado
+	        var numeroWhatsApp = '3167340721';
+        	var mensajePredeterminado = encodeURIComponent('¡Hola! Quisiera conocer más acerca de Las voces de los mayores y adquirir sus productos.');      
+        	var url = 'https://api.whatsapp.com/send?phone=' + numeroWhatsApp + '&text=' + mensajePredeterminado;
+	        // Abre la URL en una nueva pestaña
+	        window.open(url, '_blank');
+	    }
+	</script>
+	<!-- Fin ícono de WhatsApp -->
+
+</body>
+
+<script src="/js/jqueryScript copy.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.js"></script>
+</html>
